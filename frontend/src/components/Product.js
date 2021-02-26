@@ -5,8 +5,7 @@ import Rating from './Rating'
 
 const Product = (props) => {
     const {product} = props;
-    console.log('asddsasadsda')
-    console.log(props);
+    
     return (
         <Card className='my-3 p-3 rounded'>
             <Link to ={`/product/${product._id}`}>

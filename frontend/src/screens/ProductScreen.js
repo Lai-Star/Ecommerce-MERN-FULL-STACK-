@@ -7,9 +7,8 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import {listProductDetails} from '../actions/productActions'
 
-const ProductScreen = (props) => {
-    console.log(props);
-const {history,match} = props
+const ProductScreen = ({history,match}) => {
+
     const[qty,setQty] = useState(1);
     const dispatch = useDispatch();
     

@@ -8,6 +8,7 @@ import asyncHandler from 'express-async-handler';
 const getProducts = asyncHandler(async(req,res) => {
     
     const products = await Product.find({}); //We pass an empty object which gives use every thing in the db.   
+    
     res.json(products)
 
 });
