@@ -14,11 +14,11 @@ const CartScreen = ({ match, location, history }) => {
     const cart = useSelector(state => state.cart)
 
 
-    useEffect(() => {
+    usEffect(() => {
         if (productId) {
             dispatch(addToCart(productId, qty))
         }
-
+ 
     }, [dispatch, productId]);
 
     const { cartItems } = cart;
